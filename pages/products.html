@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/styleproducts.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>Productos | Nexgard</title>
+
+    <script src="/Js/productServices.js"></script>
+    <script src="/Js/cartService.js" defer></script>
+    <script src="/Js/index.js" defer></script>
+  </head>
+  <body>
+    <!-- Encabezado enfasis -->
+    <header>
+      <!-- Barra de navegacion -->
+      <nav>
+        <div class="nav-logo">
+          <a href=""><h1>Nexgard Spectra</h1></a>
+        </div>
+
+        <ul class="nav-link">
+          <li><a class="link" href="/pages/menu.html" onclick="">Inicio</a></li>
+          <li>
+            <a class="link" href="/pages/products.html" onclick="">Productos</a>
+          </li>
+          <li>
+            <a class="link" href="/pages/contact.html" onclick="">Contacto</a>
+          </li>
+          <li>
+            <a id="cart-icon"
+              ><i class="bi bi-cart-fill"></i
+              ><span id="cuenta-carrito">0</span></a
+            >
+          </li>
+          <li>
+            <a class="links" href="/index.html"
+              ><i class="bi bi-box-arrow-left"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Carrito de compras -->
+    <div class="cart">
+      <h2 class="cart-title">Tu Carrito</h2>
+
+      <!-- Contenido -->
+      <div class="cart-content"></div>
+
+      <!-- Total -->
+      <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">$0</div>
+      </div>
+
+      <!-- Boton Comprar -->
+      <button
+        type="button"
+        class="btn-buy btn-generate-ticket"
+        onclick="imprimirTicket()"
+      >
+        Comprar Ahora
+      </button>
+
+      <!-- Boton Borrar -->
+      <button type="button" class="btn-buy btn-clear-cart">
+        Limpiar Carrito
+      </button>
+
+      <!-- Cerrar Carrito -->
+      <i class="bi bi-x-circle" id="cart-close"></i>
+    </div>
+
+    <!-- Seccion de compras -->
+    <div class="shop">
+      <h2 class="section-title">Nuestros Productos</h2>
+      <div class="shop-content" id="productos-container"></div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="section-container footer-container">
+      <span class="bg-blur"></span>
+      <span class="bg-blur footer-blur"></span>
+      <div class="footer-col">
+        <div class="footer-logo">
+          <a href="/pages/menu.html"><h2>Nexgard Spectra</h2></a>
+        </div>
+        <p>
+          ¡Cuida a tu mascota con amor y calidad! Encuentra todo lo que
+          necesitas para tu perro en nuestra tienda en línea. ¡Haz que cada día
+          sea especial para él!
+        </p>
+        <div class="footer-socials">
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Compañia</h4>
+        <a href="">Negocio</a>
+        <a href="">Franquicia</a>
+        <a href="">Asociasiones</a>
+        <a href="">Red</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Sobre Nosotros</h4>
+        <a href="">Blog</a>
+        <a href="">Seguridad</a>
+        <a href="">Carreras</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contactos</h4>
+        <a href="">Contacta con Nostros</a>
+        <a href="">Politicas de Privacidad</a>
+        <a href="">Terminos y Condiciones</a>
+        <a href="">Calculadora de Peso</a>
+      </div>
+    </footer>
+
+    <div class="footer-bar">
+      Copyright © 2024 Jesus Zavala. Todos los derechos reservados.
+    </div>
+
+    <script src="/Js/cart.js"></script>
+  </body>
+</html>

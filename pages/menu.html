@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/stylemenu.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>Incio | Nexgard</title>
+  </head>
+  <body>
+    <!-- BARRA DE NAVEGACION -->
+    <nav>
+      <div class="nav-logo">
+        <a href=""><h1>Nexgard Spectra</h1></a>
+      </div>
+      <ul class="nav-link">
+        <li><a class="link" href="/pages/menu.html">Inicio</a></li>
+        <li><a class="link" href="/pages/products.html">Productos</a></li>
+        <li><a class="link" href="/pages/contact.html">Contacto</a></li>
+        <li>
+          <a class="links" id="cart-icon"><i class="bi bi-cart-fill"></i></a>
+        </li>
+        <li>
+          <a class="links" href="/index.html"
+            ><i class="bi bi-box-arrow-left"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Carrito de compras -->
+    <div class="cart">
+      <h2 class="cart-title">Tu Carrito</h2>
+
+      <!-- Contenido -->
+      <div class="cart-content"></div>
+
+      <!-- Total -->
+      <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">$0</div>
+      </div>
+
+      <!-- Boton Comprar -->
+      <button type="button" class="btn-buy">Comprar Ahora!</button>
+
+      <!-- Cerrar Carrito -->
+      <i class="bi bi-x-circle" id="cart-close"></i>
+    </div>
+
+    <!-- ENCABEZADO ENFASIS ALA PAGINA -->
+    <header class="section-container header-container">
+      <div class="header-content">
+        <span class="bg-blur"></span>
+        <span class="bg-blur header-blur"></span>
+        <h4>CUIDA A TUS MASCOTAS CONTRA LAS GARRAPATAS!</h4>
+        <h1><span>CONSTRUYE</span> UNA FAMILIA SANA.</h1>
+        <p>
+          Con nuestras pastillas tu mascota <strong>JAMAS</strong> sentira mas
+          rasquera en su cuerpo, dale alegria a su vida, dale amor a su cuerpo y
+          <strong>DISFRUTA</strong> de su felicidad.
+        </p>
+        <button
+          class="btn"
+          onclick="window.location.href = '/pages/products.html';"
+        >
+          Ver Productos
+        </button>
+      </div>
+      <div class="header-img">
+        <img class="img" src="/img/fondos/perro2.png" alt="" />
+      </div>
+    </header>
+
+    <!-- SECCION 1 -->
+    <section class="section-container explore-container">
+      <div class="explore-header">
+        <h2 class="section-header">NUESTROS PRODUCTOS</h2>
+        <div class="explore-nav">
+          <span><i class="bi bi-arrow-left-circle"></i></span>
+          <span><i class="bi bi-arrow-right-circle"></i></span>
+        </div>
+      </div>
+
+      <div class="explore-grid">
+        <div class="explore-card">
+          <span><i class="bi bi-stars"></i> </span>
+          <h4>Desparacitante</h4>
+          <p>Peso: 2 - 3.5 KG</p>
+          <img src="/img/products/1.png" alt="pastilla de 1 a 7kg" />
+          <a href="/pages/products.html"
+            >Ir a Comprar <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="explore-card">
+          <span><i class="bi bi-star-half"></i></span>
+          <h4>Desparacitante</h4>
+          <p>Peso: 3.5 - 7.5 KG</p>
+          <img src="/img/products/2.png" alt="pastilla de 1 a 7kg" />
+          <a href="/pages/products.html"
+            >Ir a Comprar <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="explore-card">
+          <span><i class="bi bi-capsule"></i> </span>
+          <h4>Desparacitante</h4>
+          <p>Peso: 7.5 - 15 KG</p>
+          <img src="/img/products/3.png" alt="pastilla de 1 a 7kg" />
+          <a href="/pages/products.html"
+            >Ir a Comprar <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="explore-card">
+          <span><i class="bi bi-star-fill"></i></span>
+          <h4>Desparacitante</h4>
+          <p>Peso: 15 - 30 KG</p>
+          <img src="/img/products/4.png" alt="pastilla de 1 a 7kg" />
+          <a href="/pages/products.html"
+            >Ir a Comprar <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-container class-container">
+      <div class="class-image">
+        <span class="bg-blur"></span>
+        <img src="/img/fondos/gato.jpg" alt="class" class="class-img-1" />
+        <img src="/img/fondos/OIP.jpg" alt="class" class="class-img-2" />
+      </div>
+
+      <div class="class-content">
+        <h2 class="section-header">Articulos Para Mascota!</h2>
+        <p>
+          Desde juguetes interactivos hasta accesorios prácticos, encontrarás
+          todo lo que necesitas para consentir a tu mejor amigo. Nuestros
+          productos están elaborados con materiales de alta calidad y pensados
+          para el bienestar de tu mascota. ¡Haz que cada día sea especial para
+          tu perro con nuestros productos!
+        </p>
+        <button
+          class="btn"
+          onclick="window.location.href = '/pages/products.html';"
+        >
+          Ir a ver los Artículos 🐕🤩
+        </button>
+      </div>
+    </div>
+
+    <!-- SECCION 2 -->
+    <section class="section-container join-container">
+      <h2 class="section-header">¿PORQUE COMPRAR CON NOSOTROS?</h2>
+      <p class="section-subheader">
+        Nuestra empresa se dedica a la venta de pastillas desparasitantes para
+        mascotas, ofreciendo productos de alta calidad y eficacia comprobada.
+        Contamos con una amplia variedad de opciones para perros y gatos,
+        adaptadas a las necesidades específicas de cada mascota.
+      </p>
+
+      <div class="join-image">
+        <img src="/img/fondos/perritos.jpg" alt="join" />
+        <div class="join-grid">
+          <div class="join-card">
+            <span><i class="bi bi-star-fill"></i></span>
+            <div class="join-card-content">
+              <h4>CALIDAD</h4>
+              <p>
+                Nuestras pastillas desparasitantes están formuladas por expertos
+                en veterinaria y cumplen con los estándares más rigurosos de
+                calidad.
+              </p>
+            </div>
+          </div>
+
+          <div class="join-card">
+            <span><i class="bi bi-person-fill-check"></i></span>
+            <div class="join-card-content">
+              <h4>SERVICIO AL CLIENTE</h4>
+              <p>
+                Nos preocupamos por la salud y el bienestar de las mascotas, por
+                eso nos esforzamos en ofrecer productos de la más alta calidad a
+                precios accesibles.
+              </p>
+            </div>
+          </div>
+
+          <div class="join-card">
+            <span><i class="bi bi-shield-lock-fill"></i></span>
+            <div class="join-card-content">
+              <h4>SEGURIDAD</h4>
+              <p>
+                Comprar con nosotros significa garantía de calidad, seguridad y
+                atención especializada. Confía en nosotros para mantener a tu
+                mascota sana y feliz.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION 3 -->
+    <section class="review">
+      <div class="section-container review-container">
+        <span><i class="bi bi-quote"></i></span>
+        <div class="review-content">
+          <h4>REVIEW DE COMPRADORES</h4>
+          <p>
+            ¡Una verdadera solución para mi perro! Compré las pastillas
+            desparasitantes y los resultados fueron asombrosos. Mi mascota se
+            siente mucho mejor y más activa. Además, el proceso de compra fue
+            rápido y sencillo. Recomiendo este producto a todos los dueños de
+            mascotas preocupados por su salud.
+          </p>
+          <div class="review-rating">
+            <span><i class="bi bi-star-fill"></i></span>
+            <span><i class="bi bi-star-fill"></i></span>
+            <span><i class="bi bi-star-fill"></i></span>
+            <span><i class="bi bi-star-fill"></i></span>
+            <span><i class="bi bi-star-half"></i></span>
+          </div>
+          <div class="review-footer">
+            <div class="review-member">
+              <img src="/img/users/yoo.jpg" alt="Comprador" />
+              <div class="review-member-details">
+                <h4>Jesus Zavala</h4>
+                <p>Desarrollador Web</p>
+              </div>
+            </div>
+            <div class="review-nav">
+              <span><i class="bi bi-arrow-left"></i></span>
+              <span><i class="bi bi-arrow-right"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="section-container footer-container">
+      <span class="bg-blur"></span>
+      <span class="bg-blur footer-blur"></span>
+      <div class="footer-col">
+        <div class="footer-logo">
+          <a href="/pages/menu.html"><h2>Nexgard Spectra</h2></a>
+        </div>
+        <p>
+          ¡Cuida a tu mascota con amor y calidad! Encuentra todo lo que
+          necesitas para tu perro en nuestra tienda en línea. ¡Haz que cada día
+          sea especial para él!
+        </p>
+        <div class="footer-socials">
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Compañia</h4>
+        <a href="">Negocio</a>
+        <a href="">Franquicia</a>
+        <a href="">Asociasiones</a>
+        <a href="">Red</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Sobre Nosotros</h4>
+        <a href="">Blog</a>
+        <a href="">Seguridad</a>
+        <a href="">Carreras</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contactos</h4>
+        <a href="">Contacta con Nostros</a>
+        <a href="">Politicas de Privacidad</a>
+        <a href="">Terminos y Condiciones</a>
+        <a href="">Calculadora de Peso</a>
+      </div>
+    </footer>
+
+    <div class="footer-bar">
+      Copyright © 2024 Jesus Zavala. Todos los derechos reservados.
+    </div>
+
+    <script src="/Js/cart.js"></script>
+  </body>
+</html>
